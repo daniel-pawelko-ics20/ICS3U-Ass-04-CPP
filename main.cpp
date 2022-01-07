@@ -13,38 +13,36 @@ int main() {
     // define variables
     string temp;
     int num1;
-	int num2;
-	int num3;
-	int largest;
+    int num2;
+    int num3;
+    int largest;
 
-	try {
+    try {
         // input
-		std::cout << "First Number: " << std::endl;
-		std::cin >> temp;
+        std::cout << "First Number: " << std::endl;
+        std::cin >> temp;
         num1 = stoi(temp);
-		std::cout << "Second Number: " << std::endl;
-		std::cin >> temp;
+        std::cout << "Second Number: " << std::endl;
+        std::cin >> temp;
         num2 = stoi(temp);
-		std::cout << "Third Number: " << std::endl;
-		std::cin >> temp;
+        std::cout << "Third Number: " << std::endl;
+        std::cin >> temp;
         num3 = stoi(temp);
-        
         // process
+
         if ((num1 >= num2) && (num1 >= num3)) {
             largest = num1;
-        }
-        else if ((num2 >= num1) && (num2 >= num3)) { 
+        } else if ((num2 >= num1) && (num2 >= num3)) {
             largest = num2;
-        }
-        else {
+        } else {
             largest = num3;
         }
 
         // output
         std::cout << "Largest Number is " << largest << "." << std::endl;
-	} catch (std::invalid_argument) {
-		std::cout << "Input must be an integer" << std::endl;
-	}
+    } catch (std::invalid_argument) {
+        std::cout << "Input must be an integer" << std::endl;
+    }
 
     // output finished
     std::cout << std::endl;
